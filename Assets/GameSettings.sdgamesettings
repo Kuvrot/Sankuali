@@ -3,7 +3,7 @@ Id: fed98f98-54be-4789-bc0d-1c0c70d38abd
 SerializedVersion: {Stride: 3.1.0.1}
 Tags: []
 DefaultScene: 220fe1df-653d-4d8d-8779-157e691f2961:MainScene
-GraphicsCompositor: bd557e90-ed50-4f39-9c5f-ac77394a6c93:GraphicsCompositor
+GraphicsCompositor: d3db127b-3b3c-4de5-af04-d6757a4fffec:GraphicsCompositor_2
 Defaults:
     - !Stride.Graphics.RenderingSettings,Stride.Graphics
         DefaultBackBufferWidth: 1280

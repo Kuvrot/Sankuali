@@ -1,0 +1,113 @@
+!SpriteSheet
+Id: 7b705086-3a4d-447f-abd4-716b457a0b8f
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    331fa0cf43fc2a0f6edbfe795018179f:
+        Source: !file ../../../Resources/GameResources/Enemies/enemy_1.png
+        Name: enemy
+        TextureRegion: {X: 8, Y: 0, Width: 71, Height: 136}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    ff3f66b379eda7e50c505aa3455a5e7f:
+        Source: !file ../../../Resources/GameResources/Enemies/enemy_1.png
+        Name: enemy
+        TextureRegion: {X: 84, Y: 0, Width: 66, Height: 136}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    cf91e4e471bf850c66c9ea553ff81cad:
+        Source: !file ../../../Resources/GameResources/Enemies/enemy_1.png
+        Name: enemy
+        TextureRegion: {X: 157, Y: 0, Width: 66, Height: 136}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    3e23960a00d9867907c17dbf8d81c900:
+        Source: !file ../../../Resources/GameResources/Enemies/enemy_1.png
+        Name: enemy
+        TextureRegion: {X: 231, Y: 0, Width: 67, Height: 136}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    c9895a527471f5f04448a27c05bfb8fc:
+        Source: !file ../../../Resources/GameResources/Enemies/enemy_1.png
+        Name: enemy
+        TextureRegion: {X: 0, Y: 138, Width: 86, Height: 137}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    d3b4d738fa0804a1ea31b526f019fba6:
+        Source: !file ../../../Resources/GameResources/Enemies/enemy_1.png
+        Name: enemy
+        TextureRegion: {X: 105, Y: 137, Width: 104, Height: 138}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    1ca9e69d72cbc9fa465f879a9cd46f37:
+        Source: !file ../../../Resources/GameResources/Enemies/enemy_1.png
+        Name: enemy
+        TextureRegion: {X: 258, Y: 137, Width: 53, Height: 138}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    a355d9ccf6e9e6de7ecdc90af0cca92b:
+        Source: !file ../../../Resources/GameResources/Enemies/enemy_1.png
+        Name: enemy
+        TextureRegion: {X: 360, Y: 137, Width: 97, Height: 138}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    2cce28c888f29f332086f71085a20a8e:
+        Source: !file ../../../Resources/GameResources/Enemies/enemy_1.png
+        Name: enemy
+        TextureRegion: {X: 4, Y: 277, Width: 65, Height: 138}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    c747622839c42d212d2cdfe349cf8915:
+        Source: !file ../../../Resources/GameResources/Enemies/enemy_1.png
+        Name: enemy
+        TextureRegion: {X: 74, Y: 275, Width: 65, Height: 139}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    9378e13212a90c8602c9c2c176ea1273:
+        Source: !file ../../../Resources/GameResources/Enemies/enemy_1.png
+        Name: enemy
+        TextureRegion: {X: 149, Y: 275, Width: 65, Height: 138}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    ac2b8be43eec4a2461fd6363a99e9a83:
+        Source: !file ../../../Resources/GameResources/Enemies/enemy_1.png
+        Name: enemy
+        TextureRegion: {X: 227, Y: 275, Width: 65, Height: 138}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    3d264e6c0f6306750c696f0023ff8968:
+        Source: !file ../../../Resources/GameResources/Enemies/enemy_1.png
+        Name: enemy
+        TextureRegion: {X: 302, Y: 277, Width: 65, Height: 138}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    f30d43a7b075a3039b795f07351ff435:
+        Source: !file ../../../Resources/GameResources/Enemies/enemy_1.png
+        Name: enemy
+        TextureRegion: {X: 369, Y: 278, Width: 65, Height: 138}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}
+    a9ff1e50dbc9aa287e8c6650a458a232:
+        Source: !file ../../../Resources/GameResources/Enemies/enemy_1.png
+        Name: enemy
+        TextureRegion: {X: 351, Y: 0, Width: 132, Height: 135}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

@@ -15,7 +15,7 @@ Type: !StandardAnimationAssetType {}
 Skeleton: 485859b4-e08c-4a30-93ea-676d3df1c556:Models/mannequinHandModel Skeleton
 RootMotion: false
 PreviewModel: 617cfcae-7c6b-4c36-9c84-c718e93f06fa:Models/mannequinHandModel
-AnimationTimeMinimum: 0:00:00:00.0000000
-AnimationTimeMaximum: 0:00:00:02.1670000
+AnimationTimeMinimum*: 0:00:00:00.0000000
+AnimationTimeMaximum*: 0:00:00:02.1666600
 ~SourceHashes:
-    de1227ec883878b842d455db2859b688~../../Resources/Animation/Reload.fbx: 4ad603dbcef7219a56051ac9b866a41e
+    490aed762005db2317ac671c63ad52d4~../../Resources/Animation/Reload.fbx: 4ad603dbcef7219a56051ac9b866a41e

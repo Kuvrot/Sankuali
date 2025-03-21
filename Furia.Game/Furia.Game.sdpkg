@@ -22,7 +22,27 @@ AssetFolders:
     -   Path: !dir ../Assets
     -   Path: !dir ../Assets
     -   Path: !dir ../Assets
-    -   Path: !dir D:/GameEngines/StrideProjects/Furia/Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir ../Assets
+    -   Path: !dir D:/opensource/Sankuali/Sankuali/Assets
 ResourceFolders:
     - !dir ../Resources
 OutputGroupDirectories: {}

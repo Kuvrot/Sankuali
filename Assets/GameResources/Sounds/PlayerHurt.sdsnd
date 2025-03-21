@@ -1,0 +1,8 @@
+!Sound
+Id: d590ca5d-2e26-491a-9603-96c3996f89fc
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/GameResources/Sounds/aargh0.ogg
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false

@@ -1,0 +1,9 @@
+!Sound
+Id: dbbe974e-4a27-4a74-bc59-882528eff00c
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../Resources/GameResources/Sounds/aargh7.ogg
+SampleRate: 48000
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false

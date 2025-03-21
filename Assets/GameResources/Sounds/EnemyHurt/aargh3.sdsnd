@@ -1,0 +1,9 @@
+!Sound
+Id: dfc33495-18d4-4337-a3f0-02cdfe76d932
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/GameResources/Sounds/EnemyHurt/aargh3.ogg
+SampleRate: 48000
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false

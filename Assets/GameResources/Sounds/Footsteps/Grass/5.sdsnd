@@ -1,0 +1,8 @@
+!Sound
+Id: 6ef7551b-65bf-4c9b-b07d-5885f4a0e2ce
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Resources/GameResources/Sounds/Footsteps/Grass/5.ogg
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false

@@ -1,0 +1,8 @@
+!Sound
+Id: 9579a8d6-1a58-4c3b-ad4f-d2eda1557950
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../../Resources/GameResources/Sounds/Footsteps/Grass/8.ogg
+CompressionRatio: 15
+StreamFromDisk: false
+Spatialized: false

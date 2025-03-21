@@ -185,6 +185,7 @@ namespace Furia.NPC.Controller
             else
             {
                 aggresiveMode = DetectTarget();
+                animationController.PlayIdleAnimation();
             }
         }
 

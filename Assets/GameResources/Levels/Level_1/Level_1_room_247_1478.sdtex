@@ -1,0 +1,11 @@
+!Texture
+Id: 81743fd2-63c9-412c-9d5f-988de0a37e50
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/GameResources/Levels/Level_1/Level_1_room_247_1478.jpeg
+Width: 64.0
+Height: 64.0
+IsSizeInPercentage: false
+Type: !ColorTextureType
+    ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+    PremultiplyAlpha: false

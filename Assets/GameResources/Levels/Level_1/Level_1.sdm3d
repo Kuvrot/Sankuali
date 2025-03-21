@@ -1,0 +1,57 @@
+!Model
+Id: ad0ff2a7-807d-419d-949d-e35fac10301e
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../../../Resources/GameResources/Levels/Level_1/Level_1.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+ScaleImport: 0.15
+Materials:
+    11d1a799ad2bd20086e72819bc0178cf:
+        Name: DefaultMaterial
+        MaterialInstance:
+            Material: 2634299e-96bf-4063-a14b-09a6f321325a:GameResources/Levels/Level_1/DefaultMaterial
+    79ae1c389ef865d159de625587bc37f8:
+        Name: ground_1
+        MaterialInstance:
+            Material: a0b0234b-5179-4a28-8065-031518854f8f:GameResources/Levels/Level_1/ground_1
+    ec7e3065fd851e8be17bf180e2584716:
+        Name: wall_1_2
+        MaterialInstance:
+            Material: be82bb72-e962-4a83-b5e2-1641c1184c23:GameResources/Levels/Level_1/wall_1_2
+    4f7572801988cb9c304922afba4792e2:
+        Name: room_247_1478
+        MaterialInstance:
+            Material: 3e8e6340-aec2-4840-bb30-e72aa12127d5:GameResources/Levels/Level_1/room_247_1478
+    023e2687f7d014df43e1bb3b3738f0c4:
+        Name: trunk
+        MaterialInstance:
+            Material: 864b0ab5-7f00-4611-b80d-efbc5beb1981:GameResources/Levels/Level_1/trunk
+    11bf3aa0d7227373f980d5996f22d752:
+        Name: stems_1
+        MaterialInstance:
+            Material: a8d91cae-22e0-4b12-b527-ca91f02f1af1:GameResources/Levels/Level_1/stems_1
+    ec6b83f04edb4428b074a81e66656528:
+        Name: stems_2
+        MaterialInstance:
+            Material: 6287da68-6750-414e-b4af-4d5640cc0254:GameResources/Levels/Level_1/stems_2
+    e01678663d44f3f757132b520566a791:
+        Name: stems_3
+        MaterialInstance:
+            Material: bcc66254-8819-4271-967f-3745c1454d86:GameResources/Levels/Level_1/stems_3
+    fbc1260d25e3cd9d6aacf0c98b622ccd:
+        Name: leaves
+        MaterialInstance:
+            Material: 0c6988f2-0a13-4dfd-aa83-bed64e9b22ea:GameResources/Levels/Level_1/leaves
+    99ce727164369b5c3968b84dbd666fc1:
+        Name: Trunk
+        MaterialInstance:
+            Material: 864b0ab5-7f00-4611-b80d-efbc5beb1981:GameResources/Levels/Level_1/trunk
+    35c85a3ee2ad1f39c72410439a6c7be0:
+        Name: Needles
+        MaterialInstance:
+            Material: 275dfdf0-14ae-403b-bfe3-22c154bf9e0a:GameResources/Levels/Level_1/Needles
+DeduplicateMaterials: false
+Modifiers: {}
+~SourceHashes:
+    a0ed2b044c4cdbacb507bc45e7a11d56~../../../../Resources/GameResources/Levels/Level_1/Level_1.obj: 5d7d3c4ba6938b8323a1520076276a68
