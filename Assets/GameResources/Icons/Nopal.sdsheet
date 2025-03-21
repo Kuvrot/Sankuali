@@ -1,0 +1,15 @@
+!SpriteSheet
+Id: f2e2957c-646a-4d52-a5cc-a2038a1c99de
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Type: Sprite2D
+ColorKeyColor: {R: 255, G: 0, B: 255, A: 255}
+Packing: {}
+Sprites:
+    182ea673d5a5f30f8303985dab986a90:
+        Source: !file ../../../Resources/GameResources/Icons/nopal.png
+        Name: nopal
+        TextureRegion: {X: 0, Y: 0, Width: 64, Height: 85}
+        Center: {X: 0.0, Y: 0.0}
+        Borders: {X: 0.0, Y: 0.0, Z: 0.0, W: 0.0}
+        BorderColor: {R: 0, G: 0, B: 0, A: 0}

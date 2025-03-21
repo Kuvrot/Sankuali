@@ -7,10 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Furia.Windows", "Furia.Wind
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Furia.Game", "Furia.Game\Furia.Game.csproj", "{9835E50C-7B77-48CF-9648-79D5B00E7C8B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Furia.Linux", "Furia.Linux\Furia.Linux.csproj", "{174C6101-680C-426C-A653-01865D7AC701}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Furia.macOS", "Furia.macOS\Furia.macOS.csproj", "{F4DE23DF-4B74-407F-BB81-CE0AAE77EA91}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,14 +21,6 @@ Global
 		{9835E50C-7B77-48CF-9648-79D5B00E7C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9835E50C-7B77-48CF-9648-79D5B00E7C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9835E50C-7B77-48CF-9648-79D5B00E7C8B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{174C6101-680C-426C-A653-01865D7AC701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{174C6101-680C-426C-A653-01865D7AC701}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{174C6101-680C-426C-A653-01865D7AC701}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{174C6101-680C-426C-A653-01865D7AC701}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4DE23DF-4B74-407F-BB81-CE0AAE77EA91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4DE23DF-4B74-407F-BB81-CE0AAE77EA91}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4DE23DF-4B74-407F-BB81-CE0AAE77EA91}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4DE23DF-4B74-407F-BB81-CE0AAE77EA91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

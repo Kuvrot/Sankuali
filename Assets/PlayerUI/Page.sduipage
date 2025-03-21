@@ -12,6 +12,7 @@ Hierarchy:
                 Id: 25c547d0-9eff-4416-8ef5-8dfd4e6a4be0
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Opacity: 0.0
                 Width: 64.0
                 Height: 64.0
                 Margin: {}

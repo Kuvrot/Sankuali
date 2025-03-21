@@ -14,14 +14,13 @@ Hierarchy:
                         Id: 440535cc-3fd6-4e01-8870-12afefa220d4
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 6.896519, Y: 6.896519, Z: 6.896519}
+                        Scale: {X: 1.299324, Y: 1.299324, Z: 1.299324}
                         Children: {}
                     086cead27902791df374cd430d9a3c03: !SpriteComponent
-                        Id: b72e6024-c3f1-4c49-bd24-80c14c0ca431
+                        Id: f59b3d11-8045-41a5-9be9-e741e7f01cc0
                         SpriteProvider: !SpriteFromSheet
-                            Sheet: c80bd455-56d1-4c31-a928-df85a0009980:DefaultResources/UI_icons/SpriteSheet
+                            Sheet: 1f628c34-11d6-40d2-9eb3-e85852cd3ebe:GameResources/Icons/Nopal_64_64
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Sampler: PointClamp
         -   Folder: null
             Entity:
                 Id: fe53d743-75cf-4a20-a991-912281e44db2

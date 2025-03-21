@@ -1050,7 +1050,6 @@ Hierarchy:
                         player: ref!! 59c28a45-950f-4f3f-b472-42e21b3e420f
                         ui: ref!! 6d1dd95f-20af-41a9-bbad-1f48827c5edb
                         dropableLoot:
-                            221a6c16ae41bc7920974ba18c9cbc48: cb0e21ba-2707-4829-bb38-e9b11d39d45d:Prefabs/PickAmmo
                             0ce8bbabbfe41e3c387075bb40ddafde: 2259ee07-df97-44ea-b32f-3d5a30e1290d:Prefabs/PickHealth
         -   Folder: null
             Entity:
