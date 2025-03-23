@@ -127,7 +127,13 @@ namespace Furia.NPC.Controller
         {
             if (aggresiveMode)
             {
-                if (GetDistance() >= stats.stoppingDistance)
+               
+
+                float distance = GetDistance();
+
+                //DebugText.Print(distance.ToString(), new Int2(500, 300));
+
+                if (distance >= stats.stoppingDistance)
                 {
                     //This allows setting the NPC velocity from the WeaponScript class for one frame so that the enemy can be pushed back after gertting hit.
                     if (!GetHit())
@@ -184,21 +190,20 @@ namespace Furia.NPC.Controller
             }
             else
             {
-                aggresiveMode = DetectTarget();
+                DetectTarget();
                 animationController.PlayIdleAnimation();
             }
         }
 
-        private bool DetectTarget()
+        private void DetectTarget()
         {
             if (target != null)
             {
                 if (GetDistance() <= stats.detectRange)
                 {
-                    return true;
+                    aggresiveMode = true;
                 }
             }
-            return false;
         }
 
         private float GetDistance()

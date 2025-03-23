@@ -10,6 +10,7 @@ using Vortice.Vulkan;
 using Stride.Rendering.Sprites;
 using Stride.Graphics;
 using SharpDX.Direct3D11;
+using Silk.NET.OpenXR;
 
 namespace Furia.NPC.Animation
 {
@@ -39,6 +40,7 @@ namespace Furia.NPC.Animation
 
         public override void Start()
         {
+            CheckComponents();
             //This is how you are supposed to set sprite frames https://doc.stride3d.net/4.0/en/manual/sprites/use-sprites.html
             spriteComponent = Entity.Get<SpriteComponent>();
             spriteSheet = spriteComponent.SpriteProvider as SpriteFromSheet;
@@ -46,6 +48,7 @@ namespace Furia.NPC.Animation
 
         public override void Update()
         {
+            DebugText.Print(currentStartFrame.ToString() + " , " + currentEndFrame.ToString(), new Int2(500, 300));
         }
 
         public void PlayIdleAnimation()
@@ -88,6 +91,11 @@ namespace Furia.NPC.Animation
         {
             if (Counter())
             {
+                if (spriteSheet.CurrentFrame > currentEndFrame || spriteSheet.CurrentFrame < currentStartFrame)
+                {
+                    spriteSheet.CurrentFrame = currentStartFrame;
+                }
+
                 if (spriteSheet.CurrentFrame < currentEndFrame)
                 {
                     spriteSheet.CurrentFrame += 1;

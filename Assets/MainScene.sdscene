@@ -19,13 +19,7 @@ Hierarchy:
         - ref!! 1c16ce32-59b1-4691-9465-974111982f67
         - ref!! 25bc5b70-bc98-4f51-b245-56c77af74122
         - ref!! 796c9d1e-0c4b-4304-a04b-83aceec725b5
-        - ref!! 644eeab8-2696-4cd4-a2dc-82284d9ede70
-        - ref!! 8e625263-abd9-4181-ab69-d8df3f10cdf6
         - ref!! 406009ab-5d2c-458f-a7b3-f7e0ab64e693
-        - ref!! c43bf4a8-9c30-44e0-b1c8-0abccd9d5aee
-        - ref!! c2c6fa3c-f6b9-44a5-83ef-3f1512d6f8a3
-        - ref!! 20d0fef2-c1bf-4524-94a0-1588c4247158
-        - ref!! b46ab5cf-36ad-4844-b8ec-a26c73ceeb29
         - ref!! eaa76ae2-7133-4ebf-aa23-b024309c2574
         - ref!! 841d9fd9-a633-4f4d-a313-2495571dc48b
         - ref!! 31eb3a5b-a120-4fee-a3c3-ed97e3c0efbc
@@ -38,6 +32,7 @@ Hierarchy:
         - ref!! af9f4989-6e4b-4d18-aeb1-957a912571dc
         - ref!! 2125b7a0-a1b0-47c5-b5a0-40ca045aa907
         - ref!! 44cf3b0d-3c79-4825-a862-c46c78c88be9
+        - ref!! 267863db-b609-4178-952f-40438f34d38e
     Parts:
         -   Entity:
                 Id: 0506cdee-f938-4f37-bc9b-d850c71fe783
@@ -59,36 +54,6 @@ Hierarchy:
                         FarClipPlane: 100.0
                         UseCustomAspectRatio: true
                         Slot: 20c7ecf7-e20e-4efe-910a-68bec83d69be
-        -   Entity:
-                Id: 08e405e4-c4bd-462d-901f-209f64eaaad3
-                Name: SpriteSheet
-                Components:
-                    cd63069ae84d76618915677691db0294: !TransformComponent
-                        Id: 366d6a11-f72b-486d-b1ff-c928db33c618
-                        Position: {X: 0.0, Y: 0.01011852, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.5871964, Y: 0.84874576, Z: 0.84874576}
-                        Children: {}
-                    1d9f8ea7bc070c56316272276a6001c7: !SpriteComponent
-                        Id: cbea5710-a442-43d7-8f47-5e55e3b87918
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 7b705086-3a4d-447f-abd4-716b457a0b8f:GameResources/Enemies/Enemy_1
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        IsAlphaCutoff: true
-                        Sampler: PointClamp
-                    122d9396dee9b26239ed286fbc23b4ed: !Furia.NPC.Animation.Npc2dAnimationController,Furia.Game
-                        Id: 98d639d8-ffd4-442b-b6ca-f478a8d09777
-                        animationSpeed: 12
-                        idleStartFrame: 0
-                        idleEndFrame: 3
-                        attackStartFrame: 4
-                        attackEndFrame: 7
-                        walkStartFrame: 8
-                        walkEndFrame: 10
-                        deathStartFrame: 11
-                        deathEndFrame: 14
-                        hitStartFrame: 11
-                        hitEndFrame: 11
         -   Folder: ShootTheCubes
             Entity:
                 Id: 1c16ce32-59b1-4691-9465-974111982f67
@@ -126,69 +91,6 @@ Hierarchy:
                                 Size: {X: 1.0, Y: 1.0, Z: 1.0}
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-        -   Folder: null
-            Entity:
-                Id: 20d0fef2-c1bf-4524-94a0-1588c4247158
-                Name: Enemy
-                Components:
-                    3105c4151ffdd6e9ba32201c619d3215: !TransformComponent
-                        Id: e0b2056e-5096-4635-b3a2-3e06f627901d
-                        Position: {X: -8.775895, Y: 0.9554226, Z: 8.752943}
-                        Rotation: {X: 0.0, Y: 0.46077305, Z: 0.0, W: 0.887518}
-                        Scale: {X: 1.0, Y: 1.7549675, Z: 1.0}
-                        Children:
-                            1efcc68f74ecdc145314f92306e40ec7: ref!! 7e17cc64-25a0-4d35-984d-068deb811287
-                    4821840a198b8a60303039b66d559f06: !ModelComponent
-                        Id: 62897bcf-51f7-46ef-986a-3969c30d2933
-                        Enabled: false
-                        Model: bd1b6a83-02e1-4a75-af89-d275cfc3f72e:Models/Box1x1x1
-                        Materials: {}
-                    ef81fdb978d04c8a3781cc4dc75c7606: !Furia.NPC.Controller.NpcAiController,Furia.Game
-                        Id: f5fe2b02-da6b-43d7-9196-1b06d58b3a1f
-                    5d25341c88a870a04796906b01a8da52: !Furia.NPC.Stats.NpcStats,Furia.Game
-                        Id: cf9de0d6-28b5-4d07-9ad6-7aa69f3a9f88
-                        npcName: (optional)
-                        health: 100.0
-                        movementSpeed: 200.0
-                        damage: 50.0
-                        attackRate: 1.0
-                        stoppingDistance: 2.0
-                        detectRange: 10.0
-                        isRangeNPC: false
-                        Projectiles: {}
-                        probabilityOfLoot: 25
-                        accuracy: 25
-                        attackSound: null
-                        hitSound: dbbe974e-4a27-4a74-bc59-882528eff00c:GameResources/Sounds/Enemy_1_Hurt
-                    dd034111bf4ef610fa2e2e99a4b5e09c: !CharacterComponent
-                        Id: c8782b65-1974-454b-b97b-345f543ac6da
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        FallSpeed: 10.0
-                        MaxSlope: {Radians: 0.7853982}
-                        JumpSpeed: 5.0
-                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
-                        ColliderShapes:
-                            d5e0ab8d9594be3406296630e8a16603: !CapsuleColliderShapeDesc
-                                Length: 0.75
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    22f02fe7cf76212187a00d63264afad9: !Furia.Player.AudioManager,Furia.Game
-                        Id: 585d7339-361d-4522-b615-34024328cb37
-                    0655bb3799144066899e8c093a281844: !Furia.NPC.Controller.AudioRandomizeSelection,Furia.Game
-                        Id: b5951848-ce8d-4985-89d7-dc2b7f4e3d30
-                        HurtSounds:
-                            a0dca1cab451ba16cf1deb8d07f7d86f: abc081a1-2f74-4d16-a9b0-6733142cc5c4:GameResources/Sounds/EnemyHurt/aargh1
-                            a16cb6edc6f0b86f77928064870d647d: 8e55a2f7-72ce-43dd-b6bc-bcd7fbdddc69:GameResources/Sounds/EnemyHurt/aargh2
-                            21c0fd526106606f1c4a1022a432f3d6: dfc33495-18d4-4337-a3f0-02cdfe76d932:GameResources/Sounds/EnemyHurt/aargh3
-                            ab429838d7fda23046cb518eb67c9e8c: b5db5bb2-3913-4331-9e5f-776f0d8dde94:GameResources/Sounds/EnemyHurt/aargh4
-                            33080c8636d8b759c89b8068ae62c45b: 0512d7fe-ac9b-4541-a7b1-91f386c937b5:GameResources/Sounds/EnemyHurt/aargh5
-                            99f2cc04389b210177c8b822032f50b7: 3fb85141-b16d-4de5-a0e4-ee507d82dd3d:GameResources/Sounds/EnemyHurt/aargh6
-                            e8d158e22e3a20430a5c88db487ad2a2: cd716b59-b0fb-4ab3-9a3f-dd5476a1194e:GameResources/Sounds/EnemyHurt/aargh7
         -   Folder: Trees
             Entity:
                 Id: 2125b7a0-a1b0-47c5-b5a0-40ca045aa907
@@ -278,35 +180,28 @@ Hierarchy:
                                 LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
         -   Entity:
-                Id: 26970c6b-71d9-4106-adf2-e99af12e55ff
-                Name: SpriteSheet
+                Id: 267863db-b609-4178-952f-40438f34d38e
+                Name: Spot light
                 Components:
-                    cd63069ae84d76618915677691db0294: !TransformComponent
-                        Id: 4ee8643b-714b-428c-b0a3-1e29a8db11b3
-                        Position: {X: 0.0, Y: 0.01011852, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.8274503, Y: 1.8274503, Z: 1.8274503}
+                    e69863c500deadadd5d10fcf9a85f423: !TransformComponent
+                        Id: d7bd8f6c-e41b-43ac-ab14-8b8b82e48257
+                        Position: {X: 4.7673264, Y: 4.5531073, Z: 5.35302}
+                        Rotation: {X: -0.70710677, Y: 0.0, Z: 0.0, W: 0.70710677}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children: {}
-                    1d9f8ea7bc070c56316272276a6001c7: !SpriteComponent
-                        Id: 1be4185a-acd5-4620-8049-de1b4bc024a3
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 6a93dc12-904d-47fc-8079-c2ebd480fd99:DefaultResources/Enemies/SpriteSheet
-                            CurrentFrame: 8
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Sampler: PointClamp
-                    122d9396dee9b26239ed286fbc23b4ed: !Furia.NPC.Animation.Npc2dAnimationController,Furia.Game
-                        Id: 09a73b29-5ffd-41cc-9a9a-a370520f9a9c
-                        animationSpeed: 12
-                        idleStartFrame: 8
-                        idleEndFrame: 8
-                        attackStartFrame: 9
-                        attackEndFrame: 10
-                        walkStartFrame: 4
-                        walkEndFrame: 7
-                        deathStartFrame: 0
-                        deathEndFrame: 3
-                        hitStartFrame: 8
-                        hitEndFrame: 8
+                    284229bdb1af4ab5c978aedf8941705a: !LightComponent
+                        Id: 63290c6d-c99d-47bf-b640-864b107ea1d5
+                        Type: !LightSpot
+                            Color: !ColorRgbProvider
+                                Value: {R: 1.0, G: 1.0, B: 1.0}
+                            Range: 10.0
+                            AngleInner: 58.8
+                            UVScale: {X: 1.0, Y: 1.0}
+                            UVOffset: {X: 0.0, Y: 0.0}
+                            Shadow:
+                                BiasParameters:
+                                    DepthBias: 0.001
+                        Intensity: 20.0
         -   Folder: Lights
             Entity:
                 Id: 2b5698d3-f8fd-41ca-822c-29fc288e6e7d
@@ -395,12 +290,14 @@ Hierarchy:
                 Components:
                     a2d6ca1adcf6ec41a4c7d29eb46ea480: !TransformComponent
                         Id: b204a513-1531-43ed-8a03-dd82c62e9d84
-                        Position*: {X: 13.467997, Y: 1.4809911, Z: -20.555319}
-                        Rotation*: {X: 0.0, Y: 0.0, Z: 0.71197456, W: 0.7022053}
+                        Position*: {X: 4.9855537, Y: 1.4809911, Z: 5.495086}
+                        Rotation*: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
+                        Children:
+                            54d3e7d00f4287ca36fe335390c0f80d: ref!! e5907493-9842-48d8-ba42-191df9df438b
                     8fff9564224e164bbfeeb200886985b1: !ModelComponent
                         Id: 1dcebfe8-80d3-4fa1-b0bf-090900939379
+                        Enabled: false
                         Model: 3f9d7055-5b0f-40d6-b18e-6919d6336b8d:Models/Box3x1x1
                         Materials:
                             b268898b2f56a525462d5651c67e5380~0: cc2fe6c9-1543-4a66-a383-c0d2f3f57bbc:Materials/Emissive
@@ -422,7 +319,7 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     512ec6cc8c744c4603466961e0d8fdaa: !Furia.Interaction.DialogueSystem,Furia.Game
                         Id: 06333d68-215b-4a78-8d8f-31d53b6bafa7
-                        rotate: false
+                        rotate: true
                         isManualInteraction: true
                         dialogueInterval: 1.0
                         dialogues:
@@ -483,7 +380,7 @@ Hierarchy:
                 Components:
                     3105c4151ffdd6e9ba32201c619d3215: !TransformComponent
                         Id: ac2ab8d2-e44d-4918-b88f-b5d5681c8ca7
-                        Position: {X: -7.694089, Y: 0.9554226, Z: 3.3972583}
+                        Position: {X: -19.54506, Y: 0.9554226, Z: -4.939778}
                         Rotation: {X: 0.0, Y: 0.46077305, Z: 0.0, W: 0.887518}
                         Scale: {X: 1.0, Y: 1.7549675, Z: 1.0}
                         Children:
@@ -499,7 +396,7 @@ Hierarchy:
                         Id: a144f81f-a3c3-424d-b01d-dd4f44e95edb
                         npcName: (optional)
                         health: 100.0
-                        movementSpeed: 200.0
+                        movementSpeed: 500.0
                         damage: 50.0
                         attackRate: 1.0
                         stoppingDistance: 2.0
@@ -750,36 +647,6 @@ Hierarchy:
                         Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
                         Size: {X: 1.28, Y: 0.72, Z: 1.0}
         -   Entity:
-                Id: 58965546-c1f8-4a0c-b7aa-e06a79443806
-                Name: SpriteSheet
-                Components:
-                    cd63069ae84d76618915677691db0294: !TransformComponent
-                        Id: 9beac1d3-6b65-4ede-8b11-d536d332471e
-                        Position: {X: 0.0, Y: 0.01011852, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.5871964, Y: 0.84874576, Z: 0.84874576}
-                        Children: {}
-                    1d9f8ea7bc070c56316272276a6001c7: !SpriteComponent
-                        Id: 048898dd-6c9d-42f2-8a3d-53727f0daf36
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 7b705086-3a4d-447f-abd4-716b457a0b8f:GameResources/Enemies/Enemy_1
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        IsAlphaCutoff: true
-                        Sampler: PointClamp
-                    122d9396dee9b26239ed286fbc23b4ed: !Furia.NPC.Animation.Npc2dAnimationController,Furia.Game
-                        Id: 8a9f2b5d-dd13-47b7-810f-5717f0357af1
-                        animationSpeed: 12
-                        idleStartFrame: 0
-                        idleEndFrame: 3
-                        attackStartFrame: 4
-                        attackEndFrame: 7
-                        walkStartFrame: 8
-                        walkEndFrame: 10
-                        deathStartFrame: 11
-                        deathEndFrame: 14
-                        hitStartFrame: 11
-                        hitEndFrame: 11
-        -   Entity:
                 Id: 5a4539b0-dfb3-4c18-ac99-df71ebccb249
                 Name: Box1x1x1
                 Components:
@@ -843,89 +710,6 @@ Hierarchy:
                         ColliderShapes:
                             cd0254be5d0a9fc4a5313f138defd807: !StaticMeshColliderShapeDesc
                                 Model: ad0ff2a7-807d-419d-949d-e35fac10301e:GameResources/Levels/Level_1/Level_1
-        -   Entity:
-                Id: 644eeab8-2696-4cd4-a2dc-82284d9ede70
-                Name: Wizard
-                Components:
-                    3105c4151ffdd6e9ba32201c619d3215: !TransformComponent
-                        Id: c0939c05-2af7-48a2-9fbe-2b8bba3593f0
-                        Position: {X: -5.8109465, Y: 0.9554226, Z: -38.22015}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.7549675, Z: 1.0}
-                        Children:
-                            1efcc68f74ecdc145314f92306e40ec7: ref!! 4ee8643b-714b-428c-b0a3-1e29a8db11b3
-                    4821840a198b8a60303039b66d559f06: !ModelComponent
-                        Id: 8e62e439-fb48-41a2-8eb3-53dcf7ce6443
-                        Enabled: false
-                        Model: bd1b6a83-02e1-4a75-af89-d275cfc3f72e:Models/Box1x1x1
-                        Materials: {}
-                    ef81fdb978d04c8a3781cc4dc75c7606: !Furia.NPC.Controller.NpcAiController,Furia.Game
-                        Id: d355976d-c683-4651-a942-54bae01eb33f
-                    5d25341c88a870a04796906b01a8da52: !Furia.NPC.Stats.NpcStats,Furia.Game
-                        Id: 46141b95-9433-4b8e-92a5-04544c39abca
-                        npcName: (optional)
-                        health: 100.0
-                        movementSpeed: 100.0
-                        damage: 10.0
-                        attackRate: 1.0
-                        stoppingDistance: 15.0
-                        detectRange: 10.0
-                        isRangeNPC: true
-                        Projectiles:
-                            cae0550ff40e5f32aa7264e24535c981: 2591db0c-45f4-45fd-a6e3-4634b99047bb:Prefabs/Projectile
-                        probabilityOfLoot: 25
-                        accuracy: 25
-                        attackSound: null
-                        hitSound: cb0c7219-1240-435a-8a39-f3fdc66b2ab5:DefaultResources/Audio/MonsterHitSound
-                    dd034111bf4ef610fa2e2e99a4b5e09c: !CharacterComponent
-                        Id: 217f4a5c-93c4-4932-9223-b50b5dae7a3b
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        FallSpeed: 10.0
-                        MaxSlope: {Radians: 0.7853982}
-                        JumpSpeed: 5.0
-                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
-                        ColliderShapes:
-                            d5e0ab8d9594be3406296630e8a16603: !CapsuleColliderShapeDesc
-                                Length: 0.75
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    22f02fe7cf76212187a00d63264afad9: !Furia.Player.AudioManager,Furia.Game
-                        Id: b8df3884-49b7-432f-820a-0b6178122b21
-        -   Entity:
-                Id: 680206fe-d06a-40e5-b9a9-5613db94e683
-                Name: SpriteSheet
-                Components:
-                    cd63069ae84d76618915677691db0294: !TransformComponent
-                        Id: 7a1ca908-2793-4093-a8f6-222a1ea26473
-                        Position: {X: 0.0, Y: 0.01011852, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.8274503, Y: 1.8274503, Z: 1.8274503}
-                        Children: {}
-                    1d9f8ea7bc070c56316272276a6001c7: !SpriteComponent
-                        Id: bbef7143-d4d4-44b1-9fc6-054a1df27c73
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 6a93dc12-904d-47fc-8079-c2ebd480fd99:DefaultResources/Enemies/SpriteSheet
-                            CurrentFrame: 8
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        Sampler: PointClamp
-                    122d9396dee9b26239ed286fbc23b4ed: !Furia.NPC.Animation.Npc2dAnimationController,Furia.Game
-                        Id: 3beae8be-8312-4d37-bf88-05c6f3ca6578
-                        animationSpeed: 12
-                        idleStartFrame: 8
-                        idleEndFrame: 8
-                        attackStartFrame: 9
-                        attackEndFrame: 10
-                        walkStartFrame: 4
-                        walkEndFrame: 7
-                        deathStartFrame: 0
-                        deathEndFrame: 3
-                        hitStartFrame: 8
-                        hitEndFrame: 8
         -   Folder: Lights
             Entity:
                 Id: 6d2f4791-6113-4783-bbfa-0c268be80a53
@@ -1058,7 +842,7 @@ Hierarchy:
                 Components:
                     01c7a3d1805f77801ee33585c069c3ba: !TransformComponent
                         Id: 4fe18ae1-729f-439c-a1e3-d802ac229908
-                        Position: {X: -0.094396666, Y: 0.64448273, Z: -2.0032287}
+                        Position: {X: -0.07311672, Y: 0.5700225, Z: -1.949718}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.13873568, W: 0.99032944}
                         Scale: {X: 0.050541405, Y: 0.050541405, Z: 0.050541405}
                         Children: {}
@@ -1091,66 +875,13 @@ Hierarchy:
                             Sheet: a76524ee-fbbf-4c1f-a18d-bf49e922e145:GameResources/Weapons/Macuahuitl
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         RenderGroup: Group1
-        -   Folder: null
-            Entity:
-                Id: 8e625263-abd9-4181-ab69-d8df3f10cdf6
-                Name: Enemy
-                Components:
-                    3105c4151ffdd6e9ba32201c619d3215: !TransformComponent
-                        Id: 3c97e148-4157-405b-bcbf-ba8f9ffec07f
-                        Position: {X: -16.664177, Y: 0.9554226, Z: -38.22015}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.7549675, Z: 1.0}
-                        Children:
-                            1efcc68f74ecdc145314f92306e40ec7: ref!! 7a1ca908-2793-4093-a8f6-222a1ea26473
-                    4821840a198b8a60303039b66d559f06: !ModelComponent
-                        Id: ce61d449-a178-44c0-a6e9-7df1bd6c595d
-                        Enabled: false
-                        Model: bd1b6a83-02e1-4a75-af89-d275cfc3f72e:Models/Box1x1x1
-                        Materials: {}
-                    ef81fdb978d04c8a3781cc4dc75c7606: !Furia.NPC.Controller.NpcAiController,Furia.Game
-                        Id: 619aaefa-6688-4c66-bdbd-ac3d8234ee1b
-                    5d25341c88a870a04796906b01a8da52: !Furia.NPC.Stats.NpcStats,Furia.Game
-                        Id: 11d8f929-8d20-4055-b106-b91278a03eac
-                        npcName: (optional)
-                        health: 100.0
-                        movementSpeed: 100.0
-                        damage: 50.0
-                        attackRate: 1.0
-                        stoppingDistance: 1.5
-                        detectRange: 10.0
-                        isRangeNPC: false
-                        Projectiles: {}
-                        probabilityOfLoot: 25
-                        accuracy: 25
-                        attackSound: null
-                        hitSound: dbbe974e-4a27-4a74-bc59-882528eff00c:GameResources/Sounds/Enemy_1_Hurt
-                    dd034111bf4ef610fa2e2e99a4b5e09c: !CharacterComponent
-                        Id: b56803d2-49a8-44c1-aeae-8ee4d1aea4d5
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        FallSpeed: 10.0
-                        MaxSlope: {Radians: 0.7853982}
-                        JumpSpeed: 5.0
-                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
-                        ColliderShapes:
-                            d5e0ab8d9594be3406296630e8a16603: !CapsuleColliderShapeDesc
-                                Length: 0.75
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    22f02fe7cf76212187a00d63264afad9: !Furia.Player.AudioManager,Furia.Game
-                        Id: 4f211601-d501-4c9e-bd51-7f9fcc3825a0
         -   Entity:
                 Id: 91d1f8a0-a22b-45aa-801d-771af6cd6433
                 Name: PickWeapon
                 Components:
                     fe34ee5a2c7acb14a66042a3d78176e1: !TransformComponent
                         Id: a208f70f-d024-471d-a18f-ebee72b8dd25
-                        Position*: {X: 3.3106892, Y: 0.48574063, Z: -0.6858654}
+                        Position*: {X: -13.519358, Y: 0.48574063, Z: 16.489136}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
@@ -1244,7 +975,7 @@ Hierarchy:
                                 LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                     10565f1955d8ff15323fc3307bd47d8f: !Furia.Player.PlayerController,Furia.Game
                         Id: a1231a3f-667e-48d8-9193-aa2eca6779e1
-                        MaxRunSpeed: 9.0
+                        MaxRunSpeed: 11.0
                     b0f70abfbb3bef46e49e637e9cf6577d: !Furia.Player.PlayerInput,Furia.Game
                         Id: c43fea5c-5e1b-401c-8659-11bd77ee624c
                         Priority: -1000
@@ -1320,36 +1051,6 @@ Hierarchy:
                         Enabled: false
                         Model: bd1b6a83-02e1-4a75-af89-d275cfc3f72e:Models/Box1x1x1
                         Materials: {}
-        -   Entity:
-                Id: 9a652215-cb24-40e2-a9cf-658e31351e5b
-                Name: SpriteSheet
-                Components:
-                    cd63069ae84d76618915677691db0294: !TransformComponent
-                        Id: 7e17cc64-25a0-4d35-984d-068deb811287
-                        Position: {X: 0.0, Y: 0.01011852, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.5871964, Y: 0.84874576, Z: 0.84874576}
-                        Children: {}
-                    1d9f8ea7bc070c56316272276a6001c7: !SpriteComponent
-                        Id: 3cc5b251-af5b-4690-96d6-a89a3dc54115
-                        SpriteProvider: !SpriteFromSheet
-                            Sheet: 7b705086-3a4d-447f-abd4-716b457a0b8f:GameResources/Enemies/Enemy_1
-                        Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        IsAlphaCutoff: true
-                        Sampler: PointClamp
-                    122d9396dee9b26239ed286fbc23b4ed: !Furia.NPC.Animation.Npc2dAnimationController,Furia.Game
-                        Id: 2c5929f9-0fc4-4ca0-a049-64f010f5659f
-                        animationSpeed: 12
-                        idleStartFrame: 0
-                        idleEndFrame: 3
-                        attackStartFrame: 4
-                        attackEndFrame: 7
-                        walkStartFrame: 8
-                        walkEndFrame: 10
-                        deathStartFrame: 11
-                        deathEndFrame: 14
-                        hitStartFrame: 11
-                        hitEndFrame: 11
         -   Folder: ShootTheCubes
             Entity:
                 Id: a24787ed-9bc6-4a85-85ac-c992f3942305
@@ -1536,225 +1237,22 @@ Hierarchy:
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
                         Sampler: PointClamp
                         RenderGroup: Group1
-        -   Folder: null
-            Entity:
-                Id: b46ab5cf-36ad-4844-b8ec-a26c73ceeb29
-                Name: Enemy
-                Components:
-                    3105c4151ffdd6e9ba32201c619d3215: !TransformComponent
-                        Id: 33e4ac85-b84c-471e-b52f-0bcd60a65582
-                        Position: {X: -4.3650613, Y: 0.9554226, Z: 10.95467}
-                        Rotation: {X: 0.0, Y: 0.46077305, Z: 0.0, W: 0.887518}
-                        Scale: {X: 1.0, Y: 1.7549675, Z: 1.0}
-                        Children:
-                            1efcc68f74ecdc145314f92306e40ec7: ref!! 1a1f6292-522d-420b-8ab7-cd5ea9b14edc
-                    4821840a198b8a60303039b66d559f06: !ModelComponent
-                        Id: 34a57e9a-ca03-40e0-8fef-aacbd092dd93
-                        Enabled: false
-                        Model: bd1b6a83-02e1-4a75-af89-d275cfc3f72e:Models/Box1x1x1
-                        Materials: {}
-                    ef81fdb978d04c8a3781cc4dc75c7606: !Furia.NPC.Controller.NpcAiController,Furia.Game
-                        Id: e5256b1a-319e-4ae9-aacd-ce8e30914def
-                    5d25341c88a870a04796906b01a8da52: !Furia.NPC.Stats.NpcStats,Furia.Game
-                        Id: ffe17f5c-b500-44c0-95e2-4eabadfdf8c9
-                        npcName: (optional)
-                        health: 100.0
-                        movementSpeed: 200.0
-                        damage: 50.0
-                        attackRate: 1.0
-                        stoppingDistance: 2.0
-                        detectRange: 10.0
-                        isRangeNPC: false
-                        Projectiles: {}
-                        probabilityOfLoot: 25
-                        accuracy: 25
-                        attackSound: null
-                        hitSound: dbbe974e-4a27-4a74-bc59-882528eff00c:GameResources/Sounds/Enemy_1_Hurt
-                    dd034111bf4ef610fa2e2e99a4b5e09c: !CharacterComponent
-                        Id: 07850985-1537-4310-ad10-0e2c57d9950b
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        FallSpeed: 10.0
-                        MaxSlope: {Radians: 0.7853982}
-                        JumpSpeed: 5.0
-                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
-                        ColliderShapes:
-                            d5e0ab8d9594be3406296630e8a16603: !CapsuleColliderShapeDesc
-                                Length: 0.75
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    22f02fe7cf76212187a00d63264afad9: !Furia.Player.AudioManager,Furia.Game
-                        Id: 6d1515cf-d8c5-477e-b46d-8e9af9ce37ce
-                    0655bb3799144066899e8c093a281844: !Furia.NPC.Controller.AudioRandomizeSelection,Furia.Game
-                        Id: 66fcfd4a-2953-4842-b608-d98658721982
-                        HurtSounds:
-                            a0dca1cab451ba16cf1deb8d07f7d86f: abc081a1-2f74-4d16-a9b0-6733142cc5c4:GameResources/Sounds/EnemyHurt/aargh1
-                            a16cb6edc6f0b86f77928064870d647d: 8e55a2f7-72ce-43dd-b6bc-bcd7fbdddc69:GameResources/Sounds/EnemyHurt/aargh2
-                            21c0fd526106606f1c4a1022a432f3d6: dfc33495-18d4-4337-a3f0-02cdfe76d932:GameResources/Sounds/EnemyHurt/aargh3
-                            ab429838d7fda23046cb518eb67c9e8c: b5db5bb2-3913-4331-9e5f-776f0d8dde94:GameResources/Sounds/EnemyHurt/aargh4
-                            33080c8636d8b759c89b8068ae62c45b: 0512d7fe-ac9b-4541-a7b1-91f386c937b5:GameResources/Sounds/EnemyHurt/aargh5
-                            99f2cc04389b210177c8b822032f50b7: 3fb85141-b16d-4de5-a0e4-ee507d82dd3d:GameResources/Sounds/EnemyHurt/aargh6
-                            e8d158e22e3a20430a5c88db487ad2a2: cd716b59-b0fb-4ab3-9a3f-dd5476a1194e:GameResources/Sounds/EnemyHurt/aargh7
-        -   Folder: null
-            Entity:
-                Id: c2c6fa3c-f6b9-44a5-83ef-3f1512d6f8a3
-                Name: Enemy
-                Components:
-                    3105c4151ffdd6e9ba32201c619d3215: !TransformComponent
-                        Id: 949b8c2a-fe56-4ebd-bc85-c35a844ef1e0
-                        Position: {X: -8.775895, Y: 0.9554226, Z: 6.186822}
-                        Rotation: {X: 0.0, Y: 0.46077305, Z: 0.0, W: 0.887518}
-                        Scale: {X: 1.0, Y: 1.7549675, Z: 1.0}
-                        Children:
-                            1efcc68f74ecdc145314f92306e40ec7: ref!! 9beac1d3-6b65-4ede-8b11-d536d332471e
-                    4821840a198b8a60303039b66d559f06: !ModelComponent
-                        Id: 980c1c3c-f2ac-4758-a9dd-6e7785f2ae58
-                        Enabled: false
-                        Model: bd1b6a83-02e1-4a75-af89-d275cfc3f72e:Models/Box1x1x1
-                        Materials: {}
-                    ef81fdb978d04c8a3781cc4dc75c7606: !Furia.NPC.Controller.NpcAiController,Furia.Game
-                        Id: ba1d03e0-7069-4f75-a312-9e67522c19a2
-                    5d25341c88a870a04796906b01a8da52: !Furia.NPC.Stats.NpcStats,Furia.Game
-                        Id: 72e11838-7c1d-490f-9ef9-f9f722d934b0
-                        npcName: (optional)
-                        health: 100.0
-                        movementSpeed: 200.0
-                        damage: 50.0
-                        attackRate: 1.0
-                        stoppingDistance: 2.0
-                        detectRange: 10.0
-                        isRangeNPC: false
-                        Projectiles: {}
-                        probabilityOfLoot: 25
-                        accuracy: 25
-                        attackSound: null
-                        hitSound: dbbe974e-4a27-4a74-bc59-882528eff00c:GameResources/Sounds/Enemy_1_Hurt
-                    dd034111bf4ef610fa2e2e99a4b5e09c: !CharacterComponent
-                        Id: ccbff41c-3c9d-4fca-9dd4-ae8b9b808edf
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        FallSpeed: 10.0
-                        MaxSlope: {Radians: 0.7853982}
-                        JumpSpeed: 5.0
-                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
-                        ColliderShapes:
-                            d5e0ab8d9594be3406296630e8a16603: !CapsuleColliderShapeDesc
-                                Length: 0.75
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    22f02fe7cf76212187a00d63264afad9: !Furia.Player.AudioManager,Furia.Game
-                        Id: 4c95b2f6-0e24-4038-8134-332b15a43ad1
-                    0655bb3799144066899e8c093a281844: !Furia.NPC.Controller.AudioRandomizeSelection,Furia.Game
-                        Id: b48a714b-ccb6-49da-bf9b-f619e633bad9
-                        HurtSounds:
-                            a0dca1cab451ba16cf1deb8d07f7d86f: abc081a1-2f74-4d16-a9b0-6733142cc5c4:GameResources/Sounds/EnemyHurt/aargh1
-                            a16cb6edc6f0b86f77928064870d647d: 8e55a2f7-72ce-43dd-b6bc-bcd7fbdddc69:GameResources/Sounds/EnemyHurt/aargh2
-                            21c0fd526106606f1c4a1022a432f3d6: dfc33495-18d4-4337-a3f0-02cdfe76d932:GameResources/Sounds/EnemyHurt/aargh3
-                            ab429838d7fda23046cb518eb67c9e8c: b5db5bb2-3913-4331-9e5f-776f0d8dde94:GameResources/Sounds/EnemyHurt/aargh4
-                            33080c8636d8b759c89b8068ae62c45b: 0512d7fe-ac9b-4541-a7b1-91f386c937b5:GameResources/Sounds/EnemyHurt/aargh5
-                            99f2cc04389b210177c8b822032f50b7: 3fb85141-b16d-4de5-a0e4-ee507d82dd3d:GameResources/Sounds/EnemyHurt/aargh6
-                            e8d158e22e3a20430a5c88db487ad2a2: cd716b59-b0fb-4ab3-9a3f-dd5476a1194e:GameResources/Sounds/EnemyHurt/aargh7
-        -   Folder: null
-            Entity:
-                Id: c43bf4a8-9c30-44e0-b1c8-0abccd9d5aee
-                Name: Enemy
-                Components:
-                    3105c4151ffdd6e9ba32201c619d3215: !TransformComponent
-                        Id: 5c42a9e7-f9e8-4474-aa1a-ef885041ea90
-                        Position: {X: -5.139087, Y: 0.9554226, Z: 6.186822}
-                        Rotation: {X: 0.0, Y: 0.46077305, Z: 0.0, W: 0.887518}
-                        Scale: {X: 1.0, Y: 1.7549675, Z: 1.0}
-                        Children:
-                            1efcc68f74ecdc145314f92306e40ec7: ref!! 366d6a11-f72b-486d-b1ff-c928db33c618
-                    4821840a198b8a60303039b66d559f06: !ModelComponent
-                        Id: e994b46c-7883-4c57-8846-8134c10f4ddd
-                        Enabled: false
-                        Model: bd1b6a83-02e1-4a75-af89-d275cfc3f72e:Models/Box1x1x1
-                        Materials: {}
-                    ef81fdb978d04c8a3781cc4dc75c7606: !Furia.NPC.Controller.NpcAiController,Furia.Game
-                        Id: 19f33334-2807-4942-b2c6-420154729fa5
-                    5d25341c88a870a04796906b01a8da52: !Furia.NPC.Stats.NpcStats,Furia.Game
-                        Id: 780237ed-d4ea-43fd-b939-2579505bfb34
-                        npcName: (optional)
-                        health: 100.0
-                        movementSpeed: 200.0
-                        damage: 50.0
-                        attackRate: 1.0
-                        stoppingDistance: 2.0
-                        detectRange: 10.0
-                        isRangeNPC: false
-                        Projectiles: {}
-                        probabilityOfLoot: 25
-                        accuracy: 25
-                        attackSound: null
-                        hitSound: dbbe974e-4a27-4a74-bc59-882528eff00c:GameResources/Sounds/Enemy_1_Hurt
-                    dd034111bf4ef610fa2e2e99a4b5e09c: !CharacterComponent
-                        Id: 177edea0-d2ec-4722-b37a-0f22a3590e89
-                        CanSleep: false
-                        Restitution: 0.0
-                        Friction: 0.5
-                        RollingFriction: 0.0
-                        CcdMotionThreshold: 0.0
-                        CcdSweptSphereRadius: 0.0
-                        FallSpeed: 10.0
-                        MaxSlope: {Radians: 0.7853982}
-                        JumpSpeed: 5.0
-                        Gravity: {X: 0.0, Y: -10.0, Z: 0.0}
-                        ColliderShapes:
-                            d5e0ab8d9594be3406296630e8a16603: !CapsuleColliderShapeDesc
-                                Length: 0.75
-                                LocalOffset: {X: 0.0, Y: 0.0, Z: 0.0}
-                                LocalRotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                    22f02fe7cf76212187a00d63264afad9: !Furia.Player.AudioManager,Furia.Game
-                        Id: 8418581d-f680-4ccc-aab5-73cdaedb756c
-                    0655bb3799144066899e8c093a281844: !Furia.NPC.Controller.AudioRandomizeSelection,Furia.Game
-                        Id: 0b298b07-4118-4338-b91a-2b91f4189af7
-                        HurtSounds:
-                            a0dca1cab451ba16cf1deb8d07f7d86f: abc081a1-2f74-4d16-a9b0-6733142cc5c4:GameResources/Sounds/EnemyHurt/aargh1
-                            a16cb6edc6f0b86f77928064870d647d: 8e55a2f7-72ce-43dd-b6bc-bcd7fbdddc69:GameResources/Sounds/EnemyHurt/aargh2
-                            21c0fd526106606f1c4a1022a432f3d6: dfc33495-18d4-4337-a3f0-02cdfe76d932:GameResources/Sounds/EnemyHurt/aargh3
-                            ab429838d7fda23046cb518eb67c9e8c: b5db5bb2-3913-4331-9e5f-776f0d8dde94:GameResources/Sounds/EnemyHurt/aargh4
-                            33080c8636d8b759c89b8068ae62c45b: 0512d7fe-ac9b-4541-a7b1-91f386c937b5:GameResources/Sounds/EnemyHurt/aargh5
-                            99f2cc04389b210177c8b822032f50b7: 3fb85141-b16d-4de5-a0e4-ee507d82dd3d:GameResources/Sounds/EnemyHurt/aargh6
-                            e8d158e22e3a20430a5c88db487ad2a2: cd716b59-b0fb-4ab3-9a3f-dd5476a1194e:GameResources/Sounds/EnemyHurt/aargh7
         -   Entity:
-                Id: d85cccd5-8f58-429f-9bd5-5d10a2743682
-                Name: SpriteSheet
+                Id: bb64b2c5-72ac-4d29-aac9-9e92a1d9d524
+                Name: BigNopal
                 Components:
-                    cd63069ae84d76618915677691db0294: !TransformComponent
-                        Id: 1a1f6292-522d-420b-8ab7-cd5ea9b14edc
-                        Position: {X: 0.0, Y: 0.01011852, Z: 0.0}
+                    7e9165b323ead31c87daa630988cd1a2: !TransformComponent
+                        Id: e5907493-9842-48d8-ba42-191df9df438b
+                        Position: {X: -0.176511, Y: -0.0037086366, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.5871964, Y: 0.84874576, Z: 0.84874576}
+                        Scale: {X: 2.0664935, Y: 2.0664935, Z: 2.0664935}
                         Children: {}
-                    1d9f8ea7bc070c56316272276a6001c7: !SpriteComponent
-                        Id: d0650316-acfc-4c67-a7e0-1fcc725660f7
+                    c5f3605ab0a31cd24ef77a338c95916d: !SpriteComponent
+                        Id: 344bc1c6-c082-43c6-af65-e198d2763d5d
                         SpriteProvider: !SpriteFromSheet
-                            Sheet: 7b705086-3a4d-447f-abd4-716b457a0b8f:GameResources/Enemies/Enemy_1
+                            Sheet: 39ff9cd8-3d0b-4c6f-8ccd-541c9b039448:GameResources/Icons/BigNopal
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
-                        IsAlphaCutoff: true
                         Sampler: PointClamp
-                    122d9396dee9b26239ed286fbc23b4ed: !Furia.NPC.Animation.Npc2dAnimationController,Furia.Game
-                        Id: f9652206-495b-4b10-b105-87b8a6a4bbc5
-                        animationSpeed: 12
-                        idleStartFrame: 0
-                        idleEndFrame: 3
-                        attackStartFrame: 4
-                        attackEndFrame: 7
-                        walkStartFrame: 8
-                        walkEndFrame: 10
-                        deathStartFrame: 11
-                        deathEndFrame: 14
-                        hitStartFrame: 11
-                        hitEndFrame: 11
         -   Entity:
                 Id: dac72e5a-ffc1-4d2f-bb9c-9ea3c8816458
                 Name: Trigger

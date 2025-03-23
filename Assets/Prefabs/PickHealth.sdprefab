@@ -21,6 +21,7 @@ Hierarchy:
                         SpriteProvider: !SpriteFromSheet
                             Sheet: 1f628c34-11d6-40d2-9eb3-e85852cd3ebe:GameResources/Icons/Nopal_64_64
                         Color: {R: 1.0, G: 1.0, B: 1.0, A: 1.0}
+                        Sampler: PointClamp
         -   Folder: null
             Entity:
                 Id: fe53d743-75cf-4a20-a991-912281e44db2

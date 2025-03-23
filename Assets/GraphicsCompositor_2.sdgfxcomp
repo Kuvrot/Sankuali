@@ -172,7 +172,7 @@ SharedRenderers:
             NormalNearCutoff: 0.1
         Fog:
             Enabled*: true
-            Density*: 0.025
+            Density*: 0.01
             Color*: {R: 0.15625, G: 0.15429688, B: 0.15429688}
             FogStart*: 10.0
             SkipBackground*: true
